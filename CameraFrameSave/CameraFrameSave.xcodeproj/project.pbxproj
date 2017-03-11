@@ -1,0 +1,423 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		10DA702B1E74ACD300183C17 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DA702A1E74ACD300183C17 /* AppDelegate.swift */; };
+		10DA702D1E74ACD300183C17 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DA702C1E74ACD300183C17 /* ViewController.swift */; };
+		10DA70301E74ACD300183C17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10DA702E1E74ACD300183C17 /* Main.storyboard */; };
+		10DA70331E74ACD300183C17 /* CameraFrameSave.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 10DA70311E74ACD300183C17 /* CameraFrameSave.xcdatamodeld */; };
+		10DA70351E74ACD300183C17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10DA70341E74ACD300183C17 /* Assets.xcassets */; };
+		10DA70381E74ACD300183C17 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10DA70361E74ACD300183C17 /* LaunchScreen.storyboard */; };
+		10DA70401E74ACFA00183C17 /* FrameExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DA703F1E74ACFA00183C17 /* FrameExtractor.swift */; };
+		10DA70431E74B66800183C17 /* KeychainItemAccessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DA70411E74B66800183C17 /* KeychainItemAccessibility.swift */; };
+		10DA70441E74B66800183C17 /* KeychainWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DA70421E74B66800183C17 /* KeychainWrapper.swift */; };
+		ABC02A5C73C40C4770AEAA8D /* Pods_CameraFrameSave.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA9A898373F9CC02EBA2CFDB /* Pods_CameraFrameSave.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		10DA70271E74ACD300183C17 /* CameraFrameSave.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CameraFrameSave.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		10DA702A1E74ACD300183C17 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		10DA702C1E74ACD300183C17 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		10DA702F1E74ACD300183C17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		10DA70321E74ACD300183C17 /* CameraFrameSave.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CameraFrameSave.xcdatamodel; sourceTree = "<group>"; };
+		10DA70341E74ACD300183C17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		10DA70371E74ACD300183C17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		10DA70391E74ACD300183C17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10DA703F1E74ACFA00183C17 /* FrameExtractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrameExtractor.swift; sourceTree = "<group>"; };
+		10DA70411E74B66800183C17 /* KeychainItemAccessibility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KeychainItemAccessibility.swift; path = CameraFrameSave/KeychainItemAccessibility.swift; sourceTree = "<group>"; };
+		10DA70421E74B66800183C17 /* KeychainWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KeychainWrapper.swift; path = CameraFrameSave/KeychainWrapper.swift; sourceTree = "<group>"; };
+		5D4DE764D621DA9FAC44E5AD /* Pods-CameraFrameSave.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CameraFrameSave.release.xcconfig"; path = "Pods/Target Support Files/Pods-CameraFrameSave/Pods-CameraFrameSave.release.xcconfig"; sourceTree = "<group>"; };
+		6F5A916DE14C49479EB8D9F8 /* Pods-CameraFrameSave.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CameraFrameSave.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CameraFrameSave/Pods-CameraFrameSave.debug.xcconfig"; sourceTree = "<group>"; };
+		DA9A898373F9CC02EBA2CFDB /* Pods_CameraFrameSave.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CameraFrameSave.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		10DA70241E74ACD300183C17 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABC02A5C73C40C4770AEAA8D /* Pods_CameraFrameSave.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0525B3B662931668B98F404C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DA9A898373F9CC02EBA2CFDB /* Pods_CameraFrameSave.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		10DA701E1E74ACD300183C17 = {
+			isa = PBXGroup;
+			children = (
+				10DA70291E74ACD300183C17 /* CameraFrameSave */,
+				10DA70281E74ACD300183C17 /* Products */,
+				0525B3B662931668B98F404C /* Frameworks */,
+				A8DAE5E0621C95C260891631 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		10DA70281E74ACD300183C17 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				10DA70271E74ACD300183C17 /* CameraFrameSave.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		10DA70291E74ACD300183C17 /* CameraFrameSave */ = {
+			isa = PBXGroup;
+			children = (
+				10DA702A1E74ACD300183C17 /* AppDelegate.swift */,
+				10DA702C1E74ACD300183C17 /* ViewController.swift */,
+				10DA702E1E74ACD300183C17 /* Main.storyboard */,
+				10DA70341E74ACD300183C17 /* Assets.xcassets */,
+				10DA70361E74ACD300183C17 /* LaunchScreen.storyboard */,
+				10DA70391E74ACD300183C17 /* Info.plist */,
+				10DA70311E74ACD300183C17 /* CameraFrameSave.xcdatamodeld */,
+				10DA703F1E74ACFA00183C17 /* FrameExtractor.swift */,
+				10DA70451E74B67800183C17 /* Supporting Files */,
+			);
+			path = CameraFrameSave;
+			sourceTree = "<group>";
+		};
+		10DA70451E74B67800183C17 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				10DA70411E74B66800183C17 /* KeychainItemAccessibility.swift */,
+				10DA70421E74B66800183C17 /* KeychainWrapper.swift */,
+			);
+			name = "Supporting Files";
+			path = ..;
+			sourceTree = "<group>";
+		};
+		A8DAE5E0621C95C260891631 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6F5A916DE14C49479EB8D9F8 /* Pods-CameraFrameSave.debug.xcconfig */,
+				5D4DE764D621DA9FAC44E5AD /* Pods-CameraFrameSave.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		10DA70261E74ACD300183C17 /* CameraFrameSave */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 10DA703C1E74ACD300183C17 /* Build configuration list for PBXNativeTarget "CameraFrameSave" */;
+			buildPhases = (
+				ECD672B948D796FF11D3ECDB /* [CP] Check Pods Manifest.lock */,
+				10DA70231E74ACD300183C17 /* Sources */,
+				10DA70241E74ACD300183C17 /* Frameworks */,
+				10DA70251E74ACD300183C17 /* Resources */,
+				0057CB0EC638E65A108630CF /* [CP] Embed Pods Frameworks */,
+				C5F224F24EBE783EBE7C2063 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CameraFrameSave;
+			productName = CameraFrameSave;
+			productReference = 10DA70271E74ACD300183C17 /* CameraFrameSave.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		10DA701F1E74ACD300183C17 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Sahana;
+				TargetAttributes = {
+					10DA70261E74ACD300183C17 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 3FAWF2L664;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 10DA70221E74ACD300183C17 /* Build configuration list for PBXProject "CameraFrameSave" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 10DA701E1E74ACD300183C17;
+			productRefGroup = 10DA70281E74ACD300183C17 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				10DA70261E74ACD300183C17 /* CameraFrameSave */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		10DA70251E74ACD300183C17 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10DA70381E74ACD300183C17 /* LaunchScreen.storyboard in Resources */,
+				10DA70351E74ACD300183C17 /* Assets.xcassets in Resources */,
+				10DA70301E74ACD300183C17 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0057CB0EC638E65A108630CF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CameraFrameSave/Pods-CameraFrameSave-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C5F224F24EBE783EBE7C2063 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CameraFrameSave/Pods-CameraFrameSave-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ECD672B948D796FF11D3ECDB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		10DA70231E74ACD300183C17 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10DA70401E74ACFA00183C17 /* FrameExtractor.swift in Sources */,
+				10DA702D1E74ACD300183C17 /* ViewController.swift in Sources */,
+				10DA702B1E74ACD300183C17 /* AppDelegate.swift in Sources */,
+				10DA70441E74B66800183C17 /* KeychainWrapper.swift in Sources */,
+				10DA70431E74B66800183C17 /* KeychainItemAccessibility.swift in Sources */,
+				10DA70331E74ACD300183C17 /* CameraFrameSave.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		10DA702E1E74ACD300183C17 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				10DA702F1E74ACD300183C17 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		10DA70361E74ACD300183C17 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				10DA70371E74ACD300183C17 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		10DA703A1E74ACD300183C17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		10DA703B1E74ACD300183C17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		10DA703D1E74ACD300183C17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F5A916DE14C49479EB8D9F8 /* Pods-CameraFrameSave.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3FAWF2L664;
+				INFOPLIST_FILE = CameraFrameSave/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sahana.peters.CameraFrameSave;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		10DA703E1E74ACD300183C17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D4DE764D621DA9FAC44E5AD /* Pods-CameraFrameSave.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3FAWF2L664;
+				INFOPLIST_FILE = CameraFrameSave/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sahana.peters.CameraFrameSave;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		10DA70221E74ACD300183C17 /* Build configuration list for PBXProject "CameraFrameSave" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10DA703A1E74ACD300183C17 /* Debug */,
+				10DA703B1E74ACD300183C17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		10DA703C1E74ACD300183C17 /* Build configuration list for PBXNativeTarget "CameraFrameSave" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10DA703D1E74ACD300183C17 /* Debug */,
+				10DA703E1E74ACD300183C17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		10DA70311E74ACD300183C17 /* CameraFrameSave.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				10DA70321E74ACD300183C17 /* CameraFrameSave.xcdatamodel */,
+			);
+			currentVersion = 10DA70321E74ACD300183C17 /* CameraFrameSave.xcdatamodel */;
+			path = CameraFrameSave.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 10DA701F1E74ACD300183C17 /* Project object */;
+}
