@@ -11,12 +11,12 @@ The UIImage that is captured from each frame is first base 64 encoded and then s
 
 #Further Considerations
 
-1. Keychain is not secured on a jailbroken iPhone. 
+* Keychain is not secured on a jailbroken iPhone. 
 
 One possibilty is to encrypt each image immediately (or all images packed into some container file) using the CommonCrypt Framework (stateless mode), then store in CoreData or in SQL, possibly storing only the decrypt key in the iCloud keychain
 
 Another possibility is to get the GPS coordinates of the phone when images are recorded, use those numbers a part of the calculation of the encrytion key, and those coordinatates that to a server somewhere so must know those coordinates in order to create decryption key
 
-2. The UI for this app can be improved considerably. 
+* The UI for this app can be improved considerably. 
 
 
